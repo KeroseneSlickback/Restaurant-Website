@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap');
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Mali', cursive;
+	color: black;
+}
+
+:root {
+	--custWhite: #f7f9fc;
+	--custLemon: #fff7c9;
+	--custTea: #c9e8c8;
+	--custCeledon: #a4deab;
+	--custPine: #4a9e8e;
+	--custMyrtle: #38776b;
+	--custMSU: #254f47;
+	--custDJungle: #132824;
+}
+
+body {
+	background-color: var(--custLemon);
+	max-width: 900px;
+	margin: auto;
+}
+
+#headerContainer {
+	background-color: var(--custLemon);
+}
+
+#headerUl {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0px 30px;
+}
+
+.navItem {
+	background-color: var(--custTea);
+	font-size: 1.5rem;
+	color: var(--custDJungle);
+	border-radius: 10px;
+	list-style-type: none;
+	padding: 15px 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.navItem:hover {
+	transition: 0.1s ease-in;
+	background-color: var(--custPine);
+	color: var(--custWhite);
+}
+
+.navItemSelected {
+	background-color: var(--custPine);
+	color: var(--custWhite);
+}
+
+#bodyContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--custPine);
+	border: 5px outset var(--custMSU);
+	padding: 20px;
+	margin: 20px 30px;
+	border-radius: 10px;
+}
+
+.titleContainer {
+	background-color: var(--custLemon);
+	border: 5px outset var(--custDJungle);
+	border-radius: 10px;
+	padding: 10px 25px;
+	font-size: 2.2rem;
+	margin: 30px 0px 40px 0px;
+}
+
+.boxContainer {
+	background-color: var(--custTea);
+	border: 5px outset var(--custDJungle);
+	border-radius: 10px;
+	padding: 10px 15px;
+	font-size: 1.3rem;
+	max-width: 500px;
+	margin: 20px 0px;
+}
+
+.imgDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+
+.img {
+	border-radius: 10px;
+	border: 5px outset var(--custDJungle);
+}
